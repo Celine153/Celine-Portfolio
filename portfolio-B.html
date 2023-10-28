@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Portfolio Details</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet" />
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <main id="main">
+      <!-- ======= Portfolio Details Section ======= -->
+      <section id="portfolio-details" class="portfolio-details">
+        <div class="container">
+          <div class="row gy-4">
+            <div class="col-lg-7">
+              <div class="portfolio-details-slider swiper">
+                <div class="swiper-wrapper align-items-center">
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/program-2.png" alt="" />
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+
+            <div class="col-lg-5">
+              <div class="portfolio-info">
+                <h3>Project information</h3>
+                <ul>
+                  <li><strong>Project Name</strong>: INC Problem</li>
+                  <li><strong>Role</strong>: INC participants</li>
+                  <li><strong>Language</strong>: CPP</li>
+                  <li>
+                    <strong>Link Problem</strong>:
+                    <a href="https://binusianorg-my.sharepoint.com/personal/celine_wong_binus_ac_id/_layouts/15/guestaccess.aspx?share=EYSpAyqLin5Cssfwc1gw_coBM8h71G5tRf-8Qv_123NPzw&e=tIOknV">Drive/INCproblemB</a>
+                  </li>
+                  <li>
+                    <strong>Link Code</strong>:
+                    <a href="https://binusianorg-my.sharepoint.com/personal/celine_wong_binus_ac_id/_layouts/15/guestaccess.aspx?share=EdGWKK8wF3xFkI7rMDN8Gi4Bz00H1WyW2wc6-nMU76CxBw&e=Dmk7Id">http://bit.ly/INC_B</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="portfolio-description">
+                <h2>Description</h2>
+                <p>
+                  The program aims to output the minimum time (an integer) required to cook ordered steaks or to output -1 if the order cannot be fulfilled. Users will be prompted to input the number of orders, the available stock of steaks
+                  in the store, the time required to cook steaks from level I to level i+1, and the steak orders.
+                </p>
+
+                <p>Explanation</p>
+                <ol>
+                  <li>To begin, we will declare the necessary variables, such as arrays to store cooking times (done), the steak stock available in the shop (stock), and steak orders (order).</li>
+                  <li>Users are then required to input integer values to indicate sign-in/sign-out events. These inputs will be stored in an array (the array variable is 'arr') for further processing.</li>
+                  <li>The program will perform a check on the amount of steak stock and orders at the earliest level. If the stock quantity is less than the orders, the program will proceed to the output process of -1</li>
+
+                  <li>
+                    However, if the stock quantity is greater than or equal to the orders, the program will loop to process each level I, starting from the last index (highest level) in the stock and order arrays.
+                    <ol type="a">
+                      <li>The program will check if the stock[i] is less than the order for steak[i].</li>
+                      <li>
+                        Then, we will determine the shortage of steak at level i. To fulfill the shortage of orders, the program will take the available stock from the previous level. Therefore, the stock of steak at level[i-1] will be
+                        reduced by the required shortage of orders.
+                      </li>
+                      <li>Cooking times will be summed up for the total time needed to cook the shortage of steak from the previous level.</li>
+                      <li>Steps 4a to 4c will be repeated until the second lowest steak level.</li>
+                    </ol>
+                  </li>
+                  <li>
+                    The program will then check the quantity of the lowest-level steak. If the stock quantity is less than the orders due to the impossibility of fulfilling orders at the first level (see point 3) or due to a shortage of
+                    stock for cooking steak (after going through point 4), it will output -1, indicating there is no way to fulfill the orders.
+                  </li>
+                  <li>If there is a way to fulfill the orders, the program will output the total cooking time for all the orders.</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- End Portfolio Details Section -->
+    </main>
+    <!-- End #main -->
+
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

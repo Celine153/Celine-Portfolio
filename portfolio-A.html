@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Portfolio Details</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet" />
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <main id="main">
+      <!-- ======= Portfolio Details Section ======= -->
+      <section id="portfolio-details" class="portfolio-details">
+        <div class="container">
+          <div class="row gy-4">
+            <div class="col-lg-7">
+              <div class="portfolio-details-slider swiper">
+                <div class="swiper-wrapper align-items-center">
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/program-1.png" alt="" />
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+
+            <div class="col-lg-5">
+              <div class="portfolio-info">
+                <h3>Project information</h3>
+                <ul>
+                  <li><strong>Project Name</strong>: INC Problem</li>
+                  <li><strong>Role</strong>: INC participants</li>
+                  <li><strong>Language</strong>: CPP</li>
+                  <li>
+                    <strong>Link Problem</strong>:
+                    <a href="https://binusianorg-my.sharepoint.com/personal/celine_wong_binus_ac_id/_layouts/15/guestaccess.aspx?share=EeT2EscAv9dJseLVf2b7nE8BjnENAuTqeMBpvvo0VtoH8w&e=VPjp49">Drive/INCproblemA</a>
+                  </li>
+                  <li>
+                    <strong>Link Code</strong>:
+                    <a href="https://binusianorg-my.sharepoint.com/personal/celine_wong_binus_ac_id/_layouts/15/guestaccess.aspx?share=EaRYnGhz-kBEkINwfjj__4YB7IbswNhjd4WC_RIGMUvdFg&e=siIMiR">http://bit.ly/INC_A</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="portfolio-description">
+                <h2>Description</h2>
+                <p>
+                  This program aims to detect suspicious events, specifically, the sign-out of an account ID that has not previously signed in. The account IDs are represented as integer values ranging from 1 to 1000, and a sign-out event
+                  is indicated by an integer below 0. The program's output is the total count of suspicious account IDs.​
+                </p>
+
+                <p>Explanation</p>
+                <ol>
+                  <li>Users need to input the number of integers to be processed.</li>
+                  <li>Users are then required to input integer values to indicate sign-in/sign-out events. These inputs will be stored in an array (the array variable is 'arr') for further processing.</li>
+                  <li>The program will allocate memory for a Boolean array to serve as markers when suspicious events occur. Initialize each array item with a 'false' value.</li>
+                  <li>Declare a variable called 'ans' to store the count of detected suspicious events.</li>
+                  <li>
+                    For each item in the 'arr' array:
+                    <ol type="a">
+                      <li>Check the type of activity (Sign in/Sign out).</li>
+                      <li>
+                        If the activity type is a sign-out, then:
+                        <ol type="i">
+                          <li>Check the 'test' array. Since the 'test' array was initialized as 'false', if the account hasn't signed in previously, the 'test' array value for that item will remain 'false'.</li>
+                          <li>If the value in the 'test' array at that index is 'false', it is considered a suspicious event, and the 'ans' count is incremented by 1.</li>
+                        </ol>
+                      </li>
+                      <li>
+                        However, if the activity type is not a sign-out (i.e., the item in 'arr' has a value &lt; 0), then:
+                        <ol type="i">
+                          <li>Update the 'test' array at the same index as the 'arr' item's value to 'true'. This indicates that the corresponding ID has signed in.</li>
+                        </ol>
+                      </li>
+                    </ol>
+                  </li>
+                  <li>Repeat steps 5a to 5c until all items in the 'arr' array have been checked.</li>
+                  <li>Display the total count of detected suspicious events.</li>
+                </ol>
+                <p></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- End Portfolio Details Section -->
+    </main>
+    <!-- End #main -->
+
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
